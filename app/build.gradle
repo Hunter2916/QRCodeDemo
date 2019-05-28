@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.maijia.QR"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应 cpu 类型的.so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi64-v8a', 'x86', 'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JSHARE_PKGNAME: applicationId,
+                JPUSH_APPKEY  : "b7b22d814a39cbcb283936f7", //极光控制台创建应用得到的 AppKey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                TENCENT_APPID : "1106011004",//腾讯开放平台注册应用得到的 appId
+                FACEBOOK_APPID: "facebook 开发者应用的 appID"// facebook 注册应用得到的 appId
+        ]
+
+    }
+    dexOptions {
+        jumboMode true
+    }
+    signingConfigs {
+        config {
+            keyAlias 'maijia'
+            keyPassword 'maijia'
+            storeFile file('D:/git/workspace/QRCodeDemo/QRCodeDemo.jks')
+            storePassword 'maijia'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //    compile 'com.example.zhouwei.library:library:1.0.0'
+    compile files('libs/zixing-core-3.2.0.jar')
+    compile files('libs/systembartint-1.0.4.jar')
+    compile files('libs/guideshowlib.jar')
+
+    //noinspection GradleDynamicVersion
+
+    //添加表格依赖
+
+    //    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //最新版本
+
+    //阴影的依赖
+
+    //百度定位架包
+    compile files('libs/BaiduLBS_Android.jar')
+
+    //极光推送
+
+    // 此处以 JShare 1.5.0 版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    // 此处以 jshare-qqmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    // 此处以 jshare-wechatmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    // 此处以 jshare-sinamodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    //   compile 'cn.jiguang.sdk:jshare-facebookmodel:1.5.0'  // 此处以 jshare-facebookmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    //   compile 'cn.jiguang.sdk:jshare-twittermodel:1.5.0'  // 此处以 jshare-twittermodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+
+    // 此处以 JCore 1.1.7 版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+    compile files('libs/jshare-android-1.5.0.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.youth.banner:banner:1.4.10'
+
+    //申请动态权限
+    compile 'me.weyye.hipermission:library:1.0.7'
+    compile 'cn.jiguang.sdk:jshare:1.6.0'
+    compile 'cn.jiguang.sdk:jshare-qqmodel:1.6.0'
+    compile 'cn.jiguang.sdk:jshare-wechatmodel:1.6.0'
+    compile 'cn.jiguang.sdk:jcore:1.2.6'
+    compile 'com.google.code.gson:gson:2.8.2'
+
+    //引入dagger2 切记要在整个工程build的下配置com.neenbedankt.gradle.plugins:android-apt:1.8
+    compile 'com.google.dagger:dagger:2.19'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.19'
+
+    //    compile 'com.lzy.widget:imagepicker:0.6.1'  //指定版本
+    compile 'me.shaohui:bottomdialog:1.1.9'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':PhotoPicker')
+    compile files('libs/jcore-android-1.2.6.jar')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    compile 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    compile project(':tabviewlibrary')
+    compile project(':indicatorlibrary')
+    compile 'com.android.support:design:28.0.0'
+    compile project(':magicindicator')
+
+    //会一种就够了
+    compile files('libs/tbs_sdk_20190111_105200.jar')
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'

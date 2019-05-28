@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="purple">#AE26FC</color>
+    <color name="purple_deep">#8F2CFC</color>
+    <color name="purple_light">#F42EFE</color>
+    <!--<color name="white_">#ffffff</color>-->
+    <color name="home">#2B3036</color>
+    <color name="tip_red">#F15A24</color>      <!--APP所有-点击状态的图标，文字，按钮的颜色（通用普遍）-->
+    <color name="main">#FF896D</color>      <!--APP所有-点击状态的图标，文字，按钮的颜色（通用普遍）-->
+    <color name="main_light">#ff8866</color>      <!--APP所有-点击状态的图标，文字，按钮的颜色（通用普遍）-->
+    <color name="black">#000000</color>   <!--纯黑色主要用于文档最大的主标题，图标的大标题文字-->
+    <color name="black_bg">#17141B</color>   <!--纯黑色主要用于文档最大的主标题，图标的大标题文字-->
+    <color name="black_light">#999999</color>   <!--title头部图标-未点击状态的颜色-->
+    <color name="tip_gray">#757575</color>   <!--title头部图标-未点击状态的颜色-->
+    <color name="title_color">#ffffff</color>    <!--title头部标题文字颜色-->
+    <color name="title_color_tip">#f9f9f9</color>    <!--title头部标题文字颜色-->
+    <color name="bg_page">#f2f2f2</color>       <!--背景色-->
+    <!--<color name="bg_page">#f0f0f0</color>       &lt;!&ndash;背景色&ndash;&gt;-->
+    <color name="bg_page_2">#f2f2f2</color>       <!--背景色-->
+    <color name="home_line">#e0e0e0</color>       <!--分割线的颜色-->
+    <!--<color name="gray">#111111</color>-->
+    <color name="gray">#232126</color>
+    <color name="gray_bright">#cccccc</color>
+    <color name="transparent_bar">#00000000</color>
+    <color name="home_text">#333333</color>
+    <color name="green">#11d34d</color>
+    <color name="baby_blue">#01c0dd</color>
+    <color name="blue">#01c0dd</color>
+    <color name="orange">#ffaa4f</color>
+
+
+    <color name="province_line">#dfdddd</color>
+    <color name="popw_date_green">#18BF17</color>
+    <color name="popw_date_gray">#898989</color>
+
+
+    <color name="light_gray_background">#E9EAEB</color>
+    <color name="light_black">#808080</color>
+    <color name="blue_bg">#0000ff</color>
+    <color name="aliPay_bar_color">#1983d1</color>
+    <color name="aliPay_search_bg_color">#11222222</color>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">分享定位大全</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="desc">图片说明</string>
+    <string name="circle">圆形</string>
+    <string name="square">正方形</string>
+    <string name="rect">长方形</string>
+    <string name="round_rect">圆角矩形</string>
+    <string name="oval">椭圆形</string>
+    <string name="triangle">三角形</string>
+    <string name="pentagon">五边形</string>
+    <string name="play">播放</string>
+    <string name="stop">暂停</string>
+    <string name="meal_detail">套餐一\n&#12288;&#12288;杭州，简称“杭”，浙江省省会，位于中国东南沿海、浙江省北部、钱塘江下游、京杭大运河南端，副省级市，是浙江省的政治、经济、文化、教育、交通和金融中心。\n\n套餐二\n&#12288;&#12288;杭州自秦朝设县治以来已有2200多年的历史，曾是吴越国和南宋的都城。因风景秀丽，素有“人间天堂”的美誉。杭州得益于京杭运河和通商口岸的便利，以及自身发达的丝绸和粮食产业，历史上曾是重要的商业集散中心。\n\n套餐三\n&#12288;&#12288;杭州人文古迹众多，西湖及其周边有大量的自然及人文景观遗迹。其中主要具代表性的有西湖文化、良渚文化、丝绸文化、茶文化，以及流传下来的许多故事传说成为杭州文化代表。2018年世界短池游泳锦标赛、2022年亚洲运动会将在杭州举办。</string>
+    <string name="meal_detail1">杭州，简称“杭”，浙江省省会，位于中国东南沿海、浙江省北部、钱塘江下游、京杭大运河南端，副省级市，是浙江省的政治、经济、文化、教育、交通和金融中心。治以来已有2200多年的历史，曾是吴越国和南宋的都城。因风景秀丽，素有“人间天堂”的美誉。杭州得益于京杭运河和通商口岸的便利，以及自身发达的丝绸和粮食产业，历史上曾是重要的商业集散中心。观遗迹。其中主要具代表性的有西湖文化、良渚文化、丝绸文化、茶文化，以及流传下来的许多故事传说成为杭州文化代表。2018年世界短池游泳锦标赛、2022年亚洲运动会将在杭州举办。</string>
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        tools:context="com.maijia.QR.activity.MainActivity">
+
+        <TextView
+            android:id="@+id/LocationResult"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Hello World!"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/type_noraml"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="普通地图" />
+
+            <Button
+                android:id="@+id/type_false"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="卫星地图" />
+            <Button
+                android:id="@+id/type_true"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="模拟导航" />
+
+            <Button
+                android:id="@+id/btn_share_pop"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_green_light"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:text="分享面板" />
+
+            <Button
+                android:id="@+id/overlay"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="覆盖物" />
+
+            <Button
+                android:id="@+id/type_none"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="空白地图"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/type_traffic"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1.5"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="实时路况(关)" />
+            <Button
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_bg_bt_blue"
+                android:singleLine="true"
+                android:text="拍照" />
+            <!--<Button-->
+                <!--android:id="@+id/location"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@mipmap/ic_bg_bt_blue"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="定位" />-->
+        </LinearLayout>
+
+        <include
+            android:id="@+id/maker_ly"
+            layout="@layout/marker_inf"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</layout>

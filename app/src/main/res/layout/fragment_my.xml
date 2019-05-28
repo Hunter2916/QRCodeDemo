@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp18"
+        android:background="@color/home" />
+
+    <ImageView
+        android:id="@+id/iv_bt"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:contentDescription="@string/desc"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.maijia.QR.view.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打电话"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="电话簿吸顶拖拽"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/nestedScrollViewrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="nested和recyclerview嵌套"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/alipayScrollViewrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="模仿阿里头部悬浮隐藏"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/gsonArrayJson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="解析双数组的json格式"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/TopSlidingChangeBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="头部滑动选中变大"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/click_show_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="点击折叠"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/time_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="项目中使用的时间和recyclerview"
+        android:textSize="18sp" />
+</LinearLayout>

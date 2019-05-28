@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Main2Activity">
+
+    <com.heima.tabview.library.TabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.heima.tabview.library.TabView>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/bottom_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<com.maijia.QR.bottombar.MainBottomBarItemView-->
+    <!--android:id="@+id/indexView"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--app:bottomBarTextColor="@color/orange"-->
+    <!--app:bottomBarenable="false"-->
+    <!--app:bottomBaricon="@drawable/icon_bottombar_index"-->
+    <!--app:bottomBartext="首页" />-->
+
+    <!--<com.maijia.QR.bottombar.MainBottomBarItemView-->
+    <!--android:id="@+id/goodsView"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--app:bottomBarTextColor="@color/orange"-->
+    <!--app:bottomBarenable="true"-->
+    <!--app:bottomBaricon="@drawable/icon_bottombar_goods"-->
+    <!--app:bottomBartext="分类" />-->
+
+    <!--<com.maijia.QR.bottombar.MainBottomBarItemView-->
+    <!--android:id="@+id/shopcarView"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--app:bottomBarTextColor="@color/orange"-->
+    <!--app:bottomBarenable="true"-->
+    <!--app:bottomBaricon="@drawable/icon_bottombar_shopcar"-->
+    <!--app:bottomBartext="购物车" />-->
+
+    <!--<com.maijia.QR.bottombar.MainBottomBarItemView-->
+    <!--android:id="@+id/meView"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--app:bottomBarTextColor="@color/orange"-->
+    <!--app:bottomBarenable="true"-->
+    <!--app:bottomBaricon="@drawable/icon_bottombar_me"-->
+    <!--app:bottomBartext="我的" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_above="@+id/bottom_bar"-->
+    <!--android:background="@color/light_gray_background" />-->
+
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/line" />-->
+</RelativeLayout>

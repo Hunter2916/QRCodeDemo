@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NestedScrollviewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp18" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/activity_length_dp_10"
+                android:scaleType="fitXY"
+                android:src="@mipmap/b1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_length_dp_55"
+                android:layout_marginTop="@dimen/activity_length_dp_12"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="@string/meal_detail" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

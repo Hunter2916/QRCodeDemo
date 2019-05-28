@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 28
+  buildToolsVersion '28.0.3'
+  resourcePrefix "__picker_"
+    lintOptions {
+        abortOnError false
+    }
+  defaultConfig {
+    minSdkVersion 10
+    targetSdkVersion 25
+  }
+}
+//apply from: '../gradle/gradle-mvn-push.gradle'
+ext {
+  supportLibVersion = "24.2.1"
+}
+dependencies {
+    //noinspection GradleCompatible
+    //noinspection GradleCompatible
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    //noinspection GradleCompatible
+    compile "com.android.support:design:28.0.0"
+    //noinspection GradleCompatible
+    compile "com.android.support:recyclerview-v7:$supportLibVersion"
+    compile "com.android.support:support-annotations:$supportLibVersion"
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':imagepicker')
+}
+
