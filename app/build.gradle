@@ -34,7 +34,7 @@ android {
         config {
             keyAlias 'maijia'
             keyPassword 'maijia'
-            storeFile file('D:/git/workspace/QRCodeDemo/QRCodeDemo.jks')
+            storeFile file('../QRCodeDemo.jks')
             storePassword 'maijia'
         }
     }
