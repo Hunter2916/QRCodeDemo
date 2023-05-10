@@ -101,7 +101,8 @@ dependencies {
     compile 'com.android.support:multidex:1.0.3'
     compile 'info.hoang8f:fbutton:1.0.5'
     compile files('libs/mpandroidchartlibrary-2-1-6.jar')
-    compile files('libs/jshare-android-1.5.0.jar')
+    compile 'cn.jiguang.sdk:jshare:1.5.0'
+    compile 'cn.jiguang.sdk:jcore:1.2.6'
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.3.1'
     compile 'info.hoang8f:fbutton:1.0.5'
     compile 'com.android.support.constraint:constraint-layout:1.1.2'
@@ -129,7 +130,6 @@ dependencies {
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     testCompile 'junit:junit:4.12'
     compile project(path: ':PhotoPicker')
-    compile files('libs/jcore-android-1.2.6.jar')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     compile 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
     compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
